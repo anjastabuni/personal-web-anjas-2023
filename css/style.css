@@ -1,0 +1,35 @@
+#about .box {
+  background: #ccffff;
+  padding: 10px;
+  border-radius: 7px;
+  text-align: center;
+  height: 300px;
+}
+#about .box h5 span {
+  padding: 5px;
+  border-bottom: 4px solid rgb(97, 97, 121);
+}
+#about .box ul,
+li {
+  list-style-type: none;
+}
+
+#skill .img {
+  width: 450px;
+  height: 400px;
+}
+
+footer img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 400%) {
+  /* For tablets: */
+  #skill .img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+}

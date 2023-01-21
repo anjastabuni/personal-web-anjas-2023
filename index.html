@@ -8,24 +8,28 @@
     <meta name="keywords" content="Programer, Developer, web Developer" />
     <meta name="author" content="Rebly Tabuni" />
     <title>Rebly Tabuni</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/cbf308a86c.js" crossorigin="anonymous"></script>
     <!-- link CDN bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <!-- link CDN bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- link swiper -->
+    <link rel="stylesheet" href="asset/vendor/swiper-bundle.min.js" />
   </head>
   <body>
     <!-- ======== HEADER START =========== -->
-    <header>
+    <header class="shadow mb-5 sticky-top">
       <!-- ************ NAV START ************* -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Rebly <span>Tabuni</span></a>
+        <div class="container-lg">
+          <a class="navbar-brand" href="index.html"><i class="fa-solid fa-laptop-code"></i> Rebly <span>Tabuni</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -34,13 +38,13 @@
                 <a class="nav-link" href="#about">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skil">Skill </a>
+                <a class="nav-link" href="#skill">Skill </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#recent">Recent Work</a>
               </li>
-              <li class="nav-item" href="#contact">
-                <a class="nav-link">Contact Me</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -52,238 +56,282 @@
     <!-- ======== HEADER START =========== -->
 
     <!-- ======== MAIN START =========== -->
-    <main>
+    <main class="my-5 py-5">
       <!-- ***************** section start **************** -->
-      <section id="home">
-        <!-- .row start -->
-        <div class="row">
-          <!-- col start -->
-          <div class="col-6">
-            <h1>WELCOME</h1>
-            <h2>saya Rebly Megib Tabuni</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni libero tenetur. Recusandae earum facere tempora voluptas iste pariatur, vero, aliquid autem ab sed exercitationem ducimus quae enim fugiat. Consectetur.
-            </p>
+      <section id="home" class="mb-5">
+        <div class="container-fluid text-center">
+          <!-- .row start -->
+          <div class="row justify-content-center">
+            <!-- col start -->
+            <div class="col-lg-5 col-sm-12 mt-5">
+              <h1 class="display-1 text-primary mb-3 fw-bolder">WELCOME</h1>
+              <h2 class="display-5 fw-bolder">saya Rebly Megib Tabuni</h2>
+              <p class="pt-1">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni libero tenetur. Recusandae earum facere tempora voluptas iste pariatur, vero, aliquid autem ab sed exercitationem ducimus quae enim fugiat.
+                Consectetur.
+              </p>
+              <button href="#about" class="btn btn-primary py-3 px-5 mt-5">About me</button>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-4 col-sm-12">
+              <img src="asset/anjas.png" style="width: 450px; height: 450px" alt="" />
+            </div>
+            <!-- col end -->
           </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-6">
-            <img src="asset/foto1.jpg" style="width: 500px; height: 500px" alt="" />
-          </div>
-          <!-- col end -->
+          <!-- .row end -->
         </div>
-        <!-- .row end -->
       </section>
       <!-- ***************** section end **************** -->
 
       <!-- ***************** section start **************** -->
-      <section id="about">
-        <!-- .row start -->
-        <h2>About Me</h2>
-        <div class="row">
-          <!-- col start -->
-          <div class="col-4">
-            <h5>Programing</h5>
-            <div>
-              <ol>
-                <li>Javascript</li>
-                <li>PHP</li>
-                <li>Java</li>
-                <li>C++</li>
-              </ol>
+      <section id="about" class="my-5 pb-5 bg-light border-top">
+        <div class="container-fluid">
+          <h2 class="text-center mt-5 display-5 fw-bolder"><span>About Me</span></h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+            Labore assumenda dolor architecto facere sed eligendi eveniet at cum ratione quos culpa, quo voluptatem minus <br />
+            reprehenderit ullam dolorem laboriosam itaque amet.
+          </p>
+          <!-- .row start -->
+          <div class="row">
+            <!-- col start -->
+            <div class="col-lg-4 my-3 col-sm-12">
+              <div class="box">
+                <h5 class="mt-4 fw-bold"><span> Bahasa Programing</span></h5>
+                <div class="text-center my-3">
+                  <ol>
+                    <li class="pt-3 fw-bold"><i class="fa-brands fa-js"></i> Javascript</li>
+                    <li class="pt-3 fw-bold"><i class="fa-brands fa-php"></i> PHP</li>
+                    <li class="pt-3 fw-bold"><i class="fa-brands fa-java"></i> Java</li>
+                  </ol>
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-4">
-            <h5>Design</h5>
-            <div>
-              <ol>
-                <li>UI</li>
-                <li>PhotoShop</li>
-                <li>Logo</li>
-                <li>Mobile</li>
-              </ol>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-4 col-sm-12 my-3">
+              <div class="box">
+                <h5 class="mt-4 fw-bold"><span>Design</span></h5>
+                <div class="text-center my-3">
+                  <ol>
+                    <li class="pt-3 fw-bold">UI</li>
+                    <li class="pt-3 fw-bold">PhotoShop</li>
+                    <li class="pt-3 fw-bold">Logo</li>
+                    <li class="pt-3 fw-bold">Mobile</li>
+                  </ol>
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-4">
-            <h5>Database</h5>
-            <div>
-              <ol>
-                <li>MySQL</li>
-                <li>SQL Server</li>
-                <li>Firebase</li>
-                <li>Oracle</li>
-              </ol>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-4 col-sm-12 my-3">
+              <div class="box">
+                <h5 class="mt-4 fw-bold"><span>Database</span></h5>
+                <div class="text-center my-3">
+                  <ol>
+                    <li class="pt-3 fw-bold">MySQL</li>
+                    <li class="pt-3 fw-bold">SQL Server</li>
+                    <li class="pt-3 fw-bold">Firebase</li>
+                    <li class="pt-3 fw-bold">Oracle</li>
+                  </ol>
+                </div>
+              </div>
             </div>
+            <!-- col end -->
           </div>
-          <!-- col end -->
+          <!-- .row end -->
         </div>
-        <!-- .row end -->
       </section>
       <!-- ***************** section end **************** -->
 
       <!-- ***************** section start **************** -->
-      <section id="skill">
-        <!-- .row start -->
-        <div class="row">
-          <!-- col start -->
-          <div class="col-6">
-            <img src="asset/img/indomay32.jpg" style="width: 500px; height: 500px" alt="" />
+      <section id="skill" class="my-3">
+        <div class="container-fluid">
+          <!-- .row start -->
+          <div class="row justify-content-center">
+            <!-- col start -->
+            <div class="col-lg-4 col-sm-12">
+              <img src="asset/img/indomay32.jpg" class="img rounded" />
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-5 col-sm-12">
+              <h2 class="mt-5 mb-3 display-5 fw-bolder" id="h2"><span>Skill Framework</span></h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni libero tenetur. Recusandae earum facere tempora voluptas iste pariatur, vero, aliquid autem ab sed exercitationem ducimus quae enim fugiat.
+                Consectetur.
+              </p>
+              <ul>
+                <li><h6>Bootstrap</h6></li>
+                <li><h6>Tailwindcss</h6></li>
+                <li><h6>Viu Js</h6></li>
+                <li><h6>Codeigniter</h6></li>
+              </ul>
+            </div>
+            <!-- col end -->
           </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-6">
-            <h2>Skill Framework</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni libero tenetur. Recusandae earum facere tempora voluptas iste pariatur, vero, aliquid autem ab sed exercitationem ducimus quae enim fugiat. Consectetur.
-            </p>
-            <h6>Bootstrap</h6>
-            <h6>Tailwindcss</h6>
-            <h6>Viu Js</h6>
-            <h6>Codeigniter</h6>
-          </div>
-          <!-- col end -->
+          <!-- .row end -->
         </div>
-        <!-- .row end -->
       </section>
       <!-- ***************** section end **************** -->
 
       <!-- ***************** section start **************** -->
-      <section id="recent">
-        <h2>My Recent Work</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ex, quae exercitationem aliquam doloribus optio distinctio assumenda dolores excepturi similique aliquid molestias at voluptas totam voluptatum? Quam sequi ipsa
-          architecto.
-        </p>
-        <!-- .row start -->
-        <div class="row">
-          <!-- col start -->
-          <div class="col-3">
-            <div class="card" style="width: 18rem">
-              <img src="asset/img/resect.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Personal Profile</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+      <section id="recent" class="mt-5 bg-light py-3">
+        <div class="container-fluid">
+          <h2 class="my-4 display-5 fw-bolder text-center">My Recent Work</h2>
+          <p class="text-center mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Laborum ex, quae exercitationem aliquam doloribus optio distinctio assumenda dolores excepturi similique aliquid molestias at voluptas totam voluptatum? Quam sequi ipsa architecto.
+          </p>
+          <!-- .row start -->
+          <div class="row justify-content-center">
+            <!-- col start -->
+            <div class="col-lg-3 col-sm-10 my-3">
+              <div class="card">
+                <img src="asset/img/resect.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Personal Profile</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-3">
-            <div class="card" style="width: 18rem">
-              <img src="asset/img/resect.jpg"" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Landing Page</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-3 col-sm-10 my-3">
+              <div class="card">
+                <img src="asset/img/resect.jpg"" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Landing Page</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-3">
-            <div class="card" style="width: 18rem">
-              <img src="asset/img/resect.jpg"" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Ecomerse</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-3 col-sm-10 my-3">
+              <div class="card">
+                <img src="asset/img/resect.jpg"" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Ecomerse</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-3">
-            <div class="card" style="width: 18rem">
-              <img src="asset/img/resect.jpg"" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Dasboard</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-3 col-sm-10 my-3">
+              <div class="card">
+                <img src="asset/img/resect.jpg"" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Dasboard</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
               </div>
             </div>
+            <!-- col end -->
           </div>
-          <!-- col end -->
+          <!-- .row end -->
         </div>
-        <!-- .row end -->
       </section>
       <!-- ***************** section end **************** -->
       <!-- ***************** section start **************** -->
-      <section id="recent">
-        <h2>Contact Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ex, quae exercitationem aliquam doloribus optio distinctio assumenda dolores excepturi similique aliquid molestias at voluptas totam voluptatum? Quam sequi ipsa
-          architecto.
-        </p>
-        <!-- .row start -->
-        <div class="row">
-          <!-- col start -->
-          <div class="col-6">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                <div id="emailHelp" class="form-text">masukan email anda,.</div>
+      <section id="contact">
+        <div class="container-fluid my-5 mx-auto">
+          <h2 class="my-4 display-5 fw-bolder text-center">Contact Me</h2>
+          <p class="text-center mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Laborum ex, quae exercitationem aliquam doloribus optio distinctio assumenda dolores excepturi similique aliquid molestias at voluptas totam voluptatum? Quam sequi ipsa architecto.
+          </p>
+          <!-- .row start -->
+          <div class="row justify-content-center">
+            <!-- col start -->
+            <div class="col-lg-5 col-sm-10">
+              <form>
+                <div class="my-3">
+                  <h3>Pesan</h3>
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                </div>
+                <div class="my-3">
+                  <label for="exampleInputPassword1" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" />
+                </div>
+                <div class="my-3">
+                  <label class="form-label">Tulis Pesan</label>
+                  <textarea class="form-control" cols="95" rows="6"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+              </form>
+            </div>
+            <!-- col end -->
+            <!-- col start -->
+            <div class="col-lg-4 col-sm-12">
+              <h3 class="fw-bolder text-center pt-5 pb-3">Lokasi</h3>
+              <div class="justify-content-center">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.7239950768158!2d140.6295004142818!3d-2.595908539187737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686cf43695add6d3%3A0xf2e38012210c3bb1!2sTaman%20Budaya%20EXPO%20Waena!5e0!3m2!1sid!2sid!4v1618310770679!5m2!1sid!2sid"
+                  width="440px"
+                  height="300px"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" />
-              </div>
-              <div class="mb-3 form-check">
-                <label class="form-check-label" for="exampleCheck1">Tulis Pesan</label>
-                <textarea name="" id="" cols="95" rows="6"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
+            </div>
+            <!-- col end -->
           </div>
-          <!-- col end -->
-          <!-- col start -->
-          <div class="col-3">
-            <h3 class="fw-bolder text-center pt-5 pb-3">Lokasi</h3>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.7239950768158!2d140.6295004142818!3d-2.595908539187737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686cf43695add6d3%3A0xf2e38012210c3bb1!2sTaman%20Budaya%20EXPO%20Waena!5e0!3m2!1sid!2sid!4v1618310770679!5m2!1sid!2sid"
-              width="600px"
-              height="400px"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-          <!-- col end -->
+          <!-- .row end -->
         </div>
-        <!-- .row end -->
       </section>
       <!-- ***************** section end **************** -->
     </main>
     <!-- ======== MAIN END =========== -->
 
     <!-- ======== FOOTER START =========== -->
-    <footer>
-      <!-- row start -->
-      <div class="row">
-        <!-- col start -->
-        <div class="col-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae omnis, rem officiis recusandae iure fuga eos sed molestias quo cumque atque minus. Odit officiis rerum, quos delectus omnis perferendis debitis!</p>
+    <footer class="footer bg-secondary text-white my-3 py-5">
+      <div class="container-fluid">
+        <!-- row start -->
+        <div class="row justify-content-center">
+          <!-- col start -->
+          <div class="col-lg-5 col-sm-12 mb-3">
+            <img src="asset/foto1.jpg" alt="" />
+            <h6>Rebly</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae omnis, rem officiis recusandae iure fuga eos sed molestias quo cumque atque minus. Odit officiis rerum, quos delectus omnis perferendis debitis!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae omnis, rem officiis recusandae iure fuga eos sed molestias quo cumque atque minus. Odit officiis rerum, quos delectus omnis perferendis debitis!</p>
+          </div>
+          <!-- col end -->
+          <!-- col start -->
+          <div class="col-lg-3 col-sm-12 mb-3">
+            <h6>Temukan Kami</h6>
+            <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+            <p><i class="fa-brands fa-whatsapp"></i> WhatsApp</p>
+            <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+            <p><i class="fa-brands fa-linkedin"></i> Linkedin</p>
+          </div>
+          <!-- col end -->
+          <!-- col start -->
+          <div class="col-lg-2 col-sm-12 mb-3">
+            <h6>link</h6>
+            <ul class="list-type-none">
+              <li class="pt-3"><a href="#home" style="text-decoration: none; color: white">Home</a></li>
+              <li class="pt-3"><a href="#about" style="text-decoration: none; color: white">About me</a></li>
+              <li class="pt-3"><a href="#skill" style="text-decoration: none; color: white">Skill </a></li>
+              <li class="pt-3"><a href="#recent" style="text-decoration: none; color: white">Recent Work</a></li>
+              <li class="pt-3"><a href="#contact" style="text-decoration: none; color: white">contact me</a></li>
+            </ul>
+          </div>
+          <!-- col end -->
         </div>
-        <!-- col end -->
-        <!-- col start -->
-        <div class="col-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae omnis, rem officiis recusandae iure fuga eos sed molestias quo cumque atque minus. Odit officiis rerum, quos delectus omnis perferendis debitis!</p>
+        <!-- row end -->
+        <div class="mt-5">
+          <hr />
+          <p class="text-center">Copyright &copy; By Rebly 2023</p>
         </div>
-        <!-- col end -->
-        <!-- col start -->
-        <div class="col-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae omnis, rem officiis recusandae iure fuga eos sed molestias quo cumque atque minus. Odit officiis rerum, quos delectus omnis perferendis debitis!</p>
-        </div>
-        <!-- col end -->
-      </div>
-      <!-- row end -->
-      <div>
-        <p>Copyright &copy; By Rebly 2023</p>
       </div>
     </footer>
     <!-- ======== FOOTER END =========== -->
