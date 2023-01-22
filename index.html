@@ -24,27 +24,30 @@
     <header class="shadow mb-5 sticky-top">
       <!-- ************ NAV START ************* -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-lg">
-          <a class="navbar-brand" href="index.html"><i class="fa-solid fa-laptop-code"></i> Rebly <span>Tabuni</span></a>
+        <div class="container-xl">
+          <a class="navbar-brand" href="index.html"
+            ><button class="btn btn-body-tertiary shadow"><span class="fw-bolder text-primary display-6"><i class="fa-brands fa-r-project"></i></span></button></a
+          >
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-pills">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link active fw-bolder" aria-current="page" href=" #scrollspyHeading1">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
+                <a class="nav-link fw-bolder" href="#scrollspyHeading2">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skill">Skill </a>
+                <a class="nav-link fw-bolder" href="#scrollspyHeading3">Skill </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#recent">Recent Work</a>
+                <a class="nav-link fw-bolder" href="#scrollspyHeading4">Recent Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Me</a>
+                <a class="nav-link fw-bolder" href="#scrollspyHeading5">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -56,26 +59,28 @@
     <!-- ======== HEADER START =========== -->
 
     <!-- ======== MAIN START =========== -->
-    <main class="my-5 py-5">
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="my-5 py-5 scrollspy-example">
       <!-- ***************** section start **************** -->
-      <section id="home" class="mb-5">
+      <section id="scrollspyHeading1"  class="mb-5">
         <div class="container-fluid text-center">
           <!-- .row start -->
           <div class="row justify-content-center">
             <!-- col start -->
             <div class="col-lg-5 col-sm-12 mt-5">
               <h1 class="display-1 text-primary mb-3 fw-bolder">WELCOME</h1>
-              <h2 class="display-5 fw-bolder">saya Rebly Megib Tabuni</h2>
+              <h2 class="display-5 fw-bolder">I'Am Rebly Tabuni</h2>
               <p class="pt-1">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni libero tenetur. Recusandae earum facere tempora voluptas iste pariatur, vero, aliquid autem ab sed exercitationem ducimus quae enim fugiat.
                 Consectetur.
               </p>
-              <button href="#about" class="btn btn-primary py-3 px-5 mt-5">About me</button>
+              <a href="#about" target="_blank" class="btn btn-outline-primary py-3 px-5 mt-5" onclick="redirInstagram()"> <span class="fw-bold fs-5">follow me</span> </a>
             </div>
             <!-- col end -->
             <!-- col start -->
             <div class="col-lg-4 col-sm-12">
-              <img src="asset/anjas.png" style="width: 450px; height: 450px" alt="" />
+              <div class="img mt-2">
+                <img src="asset/anjas.png" alt="" />
+              </div>
             </div>
             <!-- col end -->
           </div>
@@ -85,7 +90,7 @@
       <!-- ***************** section end **************** -->
 
       <!-- ***************** section start **************** -->
-      <section id="about" class="my-5 pb-5 bg-light border-top">
+      <section id="scrollspyHeading2" class="my-5 pb-5 bg-light border-top">
         <div class="container-fluid">
           <h2 class="text-center mt-5 display-5 fw-bolder"><span>About Me</span></h2>
           <p class="text-center">
@@ -101,9 +106,9 @@
                 <h5 class="mt-4 fw-bold"><span> Bahasa Programing</span></h5>
                 <div class="text-center my-3">
                   <ol>
-                    <li class="pt-3 fw-bold"><i class="fa-brands fa-js"></i> Javascript</li>
-                    <li class="pt-3 fw-bold"><i class="fa-brands fa-php"></i> PHP</li>
-                    <li class="pt-3 fw-bold"><i class="fa-brands fa-java"></i> Java</li>
+                    <li class="pt-3 fw-bold"></i> Javascript</li>
+                    <li class="pt-3 fw-bold"> PHP</li>
+                    <li class="pt-3 fw-bold"> Java</li>
                   </ol>
                 </div>
               </div>
@@ -115,7 +120,7 @@
                 <h5 class="mt-4 fw-bold"><span>Design</span></h5>
                 <div class="text-center my-3">
                   <ol>
-                    <li class="pt-3 fw-bold">UI</li>
+                    <li class="pt-3 fw-bold">Figma</li>
                     <li class="pt-3 fw-bold">PhotoShop</li>
                     <li class="pt-3 fw-bold">Logo</li>
                     <li class="pt-3 fw-bold">Mobile</li>
@@ -146,7 +151,7 @@
       <!-- ***************** section end **************** -->
 
       <!-- ***************** section start **************** -->
-      <section id="skill" class="my-3">
+      <section id="scrollspyHeading3" class="my-3">
         <div class="container-fluid">
           <!-- .row start -->
           <div class="row justify-content-center">
@@ -163,10 +168,27 @@
                 Consectetur.
               </p>
               <ul>
-                <li><h6>Bootstrap</h6></li>
-                <li><h6>Tailwindcss</h6></li>
-                <li><h6>Viu Js</h6></li>
-                <li><h6>Codeigniter</h6></li>
+                <li class=" fw-bold">
+                  Bootstrap
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                  </div>
+                </li>
+                <li class=" fw-bold">Tailwind
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                  </div>
+                </li>
+                <li class=" fw-bold">Viu Js
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%"></div>
+                  </div>
+                </li>
+                <li class=" fw-bold">Codeingnaiter
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%"></div>
+                  </div>
+                </li>
               </ul>
             </div>
             <!-- col end -->
@@ -177,7 +199,7 @@
       <!-- ***************** section end **************** -->
 
       <!-- ***************** section start **************** -->
-      <section id="recent" class="mt-5 bg-light py-3">
+      <section id="scrollspyHeading4" class="mt-5 bg-light py-3">
         <div class="container-fluid">
           <h2 class="my-4 display-5 fw-bolder text-center">My Recent Work</h2>
           <p class="text-center mb-5">
@@ -240,7 +262,7 @@
       </section>
       <!-- ***************** section end **************** -->
       <!-- ***************** section start **************** -->
-      <section id="contact">
+      <section id="scrollspyHeading5">
         <div class="container-fluid my-5 mx-auto">
           <h2 class="my-4 display-5 fw-bolder text-center">Contact Me</h2>
           <p class="text-center mb-5">
@@ -337,5 +359,6 @@
     <!-- ======== FOOTER END =========== -->
     <!-- link bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
